@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "system_design"
+version = "0.1.0"
+description = "A repository to "
+authors = ["Emad Dehnavi <dehnavi@gmx.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+diagrams = "^0.23.4"
+
+[tool.pyright]
+# https://github.com/microsoft/pyright/blob/main/docs/configuration.md
+useLibraryCodeForTypes = true
+exclude = [".cache"]
+
+[tool.ruff]
+# https://beta.ruff.rs/docs/configuration/
+select = ['E', 'W', 'F', 'I', 'B', 'C4', 'ARG', 'SIM']
+ignore = ['W291', 'W292', 'W293']
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "system_design.main:start"
