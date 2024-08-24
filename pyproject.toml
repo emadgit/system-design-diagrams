@@ -25,3 +25,4 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 start = "system_design.main:start"
 clusteredWebSerivce = "system_design.main:clusteredWebSerivce"
+languageAppPrototype = "system_design.main:languageAppPrototype"
